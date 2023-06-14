@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/customer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Campus GameSoft | Clientes </title>
+</head>
+<body>
+    <!--Container Principal-->
+    <div class="container pt-5 mt-5 d-flex flex-column justify-content-center">
+             <!-- Header principal -->
+       <div class="row container-fluid fixed-top mb-4 border-bottom">
+        <nav class="navbar navbar-dark bg-primary navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid  ">
+              <a class="navbar-brand" href="../index.html">GameSoft</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./customers.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./games.html">Juegos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Comprar</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./points.html">Puntos fidelización</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+       </div>  
+        <div class="container d-flex justify-content-around align-items-center flex-wrap ">
+            <!--Diseño formulario agregar clientes-->
+            <div class="row">
+                <div id="form" class="col d-flex flex-column justify-content-center border border-start-0 min-vw-50">
+                    <h1 class="mb-5">Registro cliente</h1>
+                    <div class="input-group mb-3">
+                        <input id="id" type="text" class="form-control" placeholder="Número de identificación" aria-label="id" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="name" type="text" class="form-control" placeholder="Nombres" aria-label="name" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="lastName" type="text" class="form-control" placeholder="Apellidos" aria-label="last-name" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="phone" type="text" class="form-control" placeholder="Teléfono" aria-label="phone" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                        <input id="email" type="text" class="form-control" placeholder="Correo electrónico" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">
+                    </div>
+                    <div class="mb-3">
+                    <div  class="input-group">
+                        <input id="birthday"type="text" class="form-control"  placeholder="Fecha de nacimiento" id="basic-url" aria-describedby="basic-addon3 basic-addon4 ">
+                    </div>                
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <input id="nacionality" type="text" class="form-control" placeholder="Nacionalidad nativa" aria-label="nacionality" aria-describedby="basic-addon1">
+                    </div>
+                    <button id="btnSave" type="button" class="btn btn-success">Guardar </button>
+                </div>
+    
+            </div>
+            <!--Input consultar--> 
+            <div class="row mt-4">
+                <div  class="col col-sm-12 col-md-12 border border-start-0 p-4">
+                    <h1>Consultar cliente</h1>
+                    <div id="search"class="input-group mb-3">
+                        <input id="id-search" type="text" class="form-control" placeholder="Número de identificación" aria-label="id" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>    
+
+        <!--Diseño tabla clientes-->
+            <div class="row mt-3">
+                <div class=" col table-responsive">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Cumpleaños</th>
+                            <th scope="col">Nacionalidad</th>
+                            <th scope="col">Eliminar</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody id="body-table" class="containerTable">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+    </div>
+
+
+
+
+    <script defer src="../js/customers.js"></script>
+        
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
